@@ -36,9 +36,31 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WBeBIFBwEfCV2MzofMzt7A"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WBeBIVBwEfCV2MzofMzt7A" value="1"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LA-MYlIWEfCDT8zyTmbBIA" name="роликовые опоры" type="_p8s6MFIVEfCDT8zyTmbBIA" association="_LA4FwFIWEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LA-zcFIWEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LBABkFIWEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_3MbmoFBvEfCV2MzofMzt7A" name="Подвижная клетка"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_3auhUFBvEfCV2MzofMzt7A" name="Подвижная платформа"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3MbmoFBvEfCV2MzofMzt7A" name="Подвижная клетка">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_7nKw0FIVEfCDT8zyTmbBIA" name="роликовые опоры" type="_p8s6MFIVEfCDT8zyTmbBIA" aggregation="composite" association="_7nC1AFIVEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7nLX4FIVEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7nL-8FIVEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_8u2xoFIVEfCDT8zyTmbBIA" name="цепной механизм подъёма" type="_qcChkFIVEfCDT8zyTmbBIA" aggregation="composite" association="_8uzHQFIVEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8u3YsFIVEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8u3_wFIVEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3auhUFBvEfCV2MzofMzt7A" name="Подвижная платформа">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_97xQsFIVEfCDT8zyTmbBIA" name="грузозахватное устройство" type="_zdRRgFIVEfCDT8zyTmbBIA" aggregation="composite" association="_97wCkFIVEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_97x3wFIVEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_97zF4FIVEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_L6nxMVIWEfCDT8zyTmbBIA" name="цепной механизм подъёма" type="_qcChkFIVEfCDT8zyTmbBIA" association="_L6lU8FIWEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L6oYQFIWEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L6oYQVIWEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_4lmZAFBvEfCV2MzofMzt7A" name="Контейнер"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_741rYFBvEfCV2MzofMzt7A" memberEnd="_742ScVBvEfCV2MzofMzt7A _742SdFBvEfCV2MzofMzt7A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_741rYVBvEfCV2MzofMzt7A" source="org.eclipse.papyrus">
@@ -77,6 +99,97 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WBdaEVBwEfCV2MzofMzt7A" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_WBeBIlBwEfCV2MzofMzt7A" name="каркас" type="_28peMFBvEfCV2MzofMzt7A" association="_WBczAFBwEfCV2MzofMzt7A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p8s6MFIVEfCDT8zyTmbBIA" name="Роликовые опоры"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qcChkFIVEfCDT8zyTmbBIA" name="Цепной механизм подъёма"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zdRRgFIVEfCDT8zyTmbBIA" name="Грузозахватное устройство">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__7cCYVIVEfCDT8zyTmbBIA" name="вилочный захват" type="_20rSMFIVEfCDT8zyTmbBIA" aggregation="composite" association="__7a0QFIVEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__7dQgFIVEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__7d3kFIVEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_20rSMFIVEfCDT8zyTmbBIA" name="Вилочный захват"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7nC1AFIVEfCDT8zyTmbBIA" memberEnd="_7nKw0FIVEfCDT8zyTmbBIA _7nMmAFIVEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7nI7oFIVEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7nJisFIVEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_7nMmAFIVEfCDT8zyTmbBIA" name="подвижная клетка" type="_3MbmoFBvEfCV2MzofMzt7A" association="_7nC1AFIVEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8uzHQFIVEfCDT8zyTmbBIA" memberEnd="_8u2xoFIVEfCDT8zyTmbBIA _8u3_wVIVEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8u08cFIVEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8u08cVIVEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8u3_wVIVEfCDT8zyTmbBIA" name="подвижная клетка" type="_3MbmoFBvEfCV2MzofMzt7A" association="_8uzHQFIVEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_97wCkFIVEfCDT8zyTmbBIA" memberEnd="_97xQsFIVEfCDT8zyTmbBIA _970UAFIVEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_97wpoFIVEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_97wpoVIVEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_970UAFIVEfCDT8zyTmbBIA" name="подвижная платформа" type="_3auhUFBvEfCV2MzofMzt7A" association="_97wCkFIVEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__7a0QFIVEfCDT8zyTmbBIA" memberEnd="__7cCYVIVEfCDT8zyTmbBIA __7eeoFIVEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__7bbUFIVEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__7cCYFIVEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__7eeoFIVEfCDT8zyTmbBIA" name="грузозахватное устройство" type="_zdRRgFIVEfCDT8zyTmbBIA" association="__7a0QFIVEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LA4FwFIWEfCDT8zyTmbBIA" memberEnd="_LA-MYlIWEfCDT8zyTmbBIA _LBABkVIWEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LA-MYFIWEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LA-MYVIWEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_LBABkVIWEfCDT8zyTmbBIA" name="каркас" type="_28peMFBvEfCV2MzofMzt7A" association="_LA4FwFIWEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_L6lU8FIWEfCDT8zyTmbBIA" memberEnd="_L6nxMVIWEfCDT8zyTmbBIA _L6oYQlIWEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L6nKIFIWEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L6nxMFIWEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_L6oYQlIWEfCDT8zyTmbBIA" name="подвижная платформа" type="_3auhUFBvEfCV2MzofMzt7A" association="_L6lU8FIWEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OWzfwFIWEfCDT8zyTmbBIA" name="Сервоприводы">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bkgQIFIWEfCDT8zyTmbBIA" type="_OnoxEFIWEfCDT8zyTmbBIA" aggregation="composite" association="_bkfCAFIWEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bkgQIVIWEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bkgQIlIWEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_csd9wlIWEfCDT8zyTmbBIA" type="_O22RwFIWEfCDT8zyTmbBIA" aggregation="composite" association="_csdWsFIWEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_csek0FIWEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cshBEFIWEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OnoxEFIWEfCDT8zyTmbBIA" name="Сервопривод X">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XkVmUlIWEfCDT8zyTmbBIA" name="роликовые опоры" type="_p8s6MFIVEfCDT8zyTmbBIA" association="_XkUYMFIWEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XkWNYFIWEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XkWNYVIWEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O22RwFIWEfCDT8zyTmbBIA" name="Сервопривод Y">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_YkdmklIWEfCDT8zyTmbBIA" name="цепной механизм подъёма" type="_qcChkFIVEfCDT8zyTmbBIA" association="_Ykc_gFIWEfCDT8zyTmbBIA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ykdmk1IWEfCDT8zyTmbBIA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YkeNoFIWEfCDT8zyTmbBIA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XkUYMFIWEfCDT8zyTmbBIA" memberEnd="_XkVmUlIWEfCDT8zyTmbBIA _XkWNYlIWEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XkVmUFIWEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XkVmUVIWEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XkWNYlIWEfCDT8zyTmbBIA" name="сервопривод x" type="_OnoxEFIWEfCDT8zyTmbBIA" association="_XkUYMFIWEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ykc_gFIWEfCDT8zyTmbBIA" memberEnd="_YkdmklIWEfCDT8zyTmbBIA _YkeNoVIWEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YkdmkFIWEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YkdmkVIWEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_YkeNoVIWEfCDT8zyTmbBIA" name="сервопривод y" type="_O22RwFIWEfCDT8zyTmbBIA" association="_Ykc_gFIWEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bkfCAFIWEfCDT8zyTmbBIA" memberEnd="_bkgQIFIWEfCDT8zyTmbBIA _bkgQI1IWEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bkfpEFIWEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bkfpEVIWEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_bkgQI1IWEfCDT8zyTmbBIA" type="_OWzfwFIWEfCDT8zyTmbBIA" association="_bkfCAFIWEfCDT8zyTmbBIA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_csdWsFIWEfCDT8zyTmbBIA" memberEnd="_csd9wlIWEfCDT8zyTmbBIA _cshBEVIWEfCDT8zyTmbBIA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_csd9wFIWEfCDT8zyTmbBIA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_csd9wVIWEfCDT8zyTmbBIA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cshBEVIWEfCDT8zyTmbBIA" type="_OWzfwFIWEfCDT8zyTmbBIA" association="_csdWsFIWEfCDT8zyTmbBIA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lHjr8FBvEfCV2MzofMzt7A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lHmvQFBvEfCV2MzofMzt7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -146,4 +259,11 @@
   <Blocks:Block xmi:id="_4lpcUFBvEfCV2MzofMzt7A" base_Class="_4lmZAFBvEfCV2MzofMzt7A"/>
   <Blocks:Block xmi:id="_OUqGcFBwEfCV2MzofMzt7A" base_Class="_OUnqMFBwEfCV2MzofMzt7A"/>
   <Blocks:Block xmi:id="_P7ruoFBwEfCV2MzofMzt7A" base_Class="_P7pSYFBwEfCV2MzofMzt7A"/>
+  <Blocks:Block xmi:id="_p9JmIFIVEfCDT8zyTmbBIA" base_Class="_p8s6MFIVEfCDT8zyTmbBIA"/>
+  <Blocks:Block xmi:id="_qcMSkFIVEfCDT8zyTmbBIA" base_Class="_qcChkFIVEfCDT8zyTmbBIA"/>
+  <Blocks:Block xmi:id="_zdabcFIVEfCDT8zyTmbBIA" base_Class="_zdRRgFIVEfCDT8zyTmbBIA"/>
+  <Blocks:Block xmi:id="_20rSMVIVEfCDT8zyTmbBIA" base_Class="_20rSMFIVEfCDT8zyTmbBIA"/>
+  <Blocks:Block xmi:id="_OW8CoFIWEfCDT8zyTmbBIA" base_Class="_OWzfwFIWEfCDT8zyTmbBIA"/>
+  <Blocks:Block xmi:id="_OntCgFIWEfCDT8zyTmbBIA" base_Class="_OnoxEFIWEfCDT8zyTmbBIA"/>
+  <Blocks:Block xmi:id="_O24uAFIWEfCDT8zyTmbBIA" base_Class="_O22RwFIWEfCDT8zyTmbBIA"/>
 </xmi:XMI>
