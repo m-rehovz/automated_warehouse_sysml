@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements">
   <uml:Model xmi:id="_lFi5wFBvEfCV2MzofMzt7A" name="automated_warehouse_sysml">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_lKlx0FBvEfCV2MzofMzt7A">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -8,22 +8,6 @@
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_1W0I0FBvEfCV2MzofMzt7A" name="Робот">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_742ScVBvEfCV2MzofMzt7A" name="block15" type="_3MbmoFBvEfCV2MzofMzt7A" aggregation="composite" association="_741rYFBvEfCV2MzofMzt7A">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_742SclBvEfCV2MzofMzt7A"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_742Sc1BvEfCV2MzofMzt7A" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_8Yn-s1BvEfCV2MzofMzt7A" name="block16" type="_3auhUFBvEfCV2MzofMzt7A" aggregation="composite" association="_8Yn-sFBvEfCV2MzofMzt7A">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8YolwFBvEfCV2MzofMzt7A"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8YolwVBvEfCV2MzofMzt7A" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_86QsIVBvEfCV2MzofMzt7A" name="block14" type="_28peMFBvEfCV2MzofMzt7A" aggregation="composite" association="_86QFEFBvEfCV2MzofMzt7A">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86QsIlBvEfCV2MzofMzt7A"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_86QsI1BvEfCV2MzofMzt7A" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_9xoZAFBvEfCV2MzofMzt7A" name="block17" type="_4lmZAFBvEfCV2MzofMzt7A" association="_9xnK4FBvEfCV2MzofMzt7A">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xoZAVBvEfCV2MzofMzt7A"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xoZAlBvEfCV2MzofMzt7A" value="1"/>
-      </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_JC__kFBwEfCV2MzofMzt7A" name="захватить контейнер"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_KP8T0FBwEfCV2MzofMzt7A" name="освободить контейнер"/>
     </packagedElement>
@@ -62,30 +46,6 @@
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_4lmZAFBvEfCV2MzofMzt7A" name="Контейнер"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_741rYFBvEfCV2MzofMzt7A" memberEnd="_742ScVBvEfCV2MzofMzt7A _742SdFBvEfCV2MzofMzt7A">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_741rYVBvEfCV2MzofMzt7A" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_742ScFBvEfCV2MzofMzt7A" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_742SdFBvEfCV2MzofMzt7A" name="робот" type="_1W0I0FBvEfCV2MzofMzt7A" association="_741rYFBvEfCV2MzofMzt7A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_8Yn-sFBvEfCV2MzofMzt7A" memberEnd="_8Yn-s1BvEfCV2MzofMzt7A _8YolwlBvEfCV2MzofMzt7A">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8Yn-sVBvEfCV2MzofMzt7A" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8Yn-slBvEfCV2MzofMzt7A" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_8YolwlBvEfCV2MzofMzt7A" name="робот" type="_1W0I0FBvEfCV2MzofMzt7A" association="_8Yn-sFBvEfCV2MzofMzt7A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_86QFEFBvEfCV2MzofMzt7A" memberEnd="_86QsIVBvEfCV2MzofMzt7A _86QsJFBvEfCV2MzofMzt7A">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_86QFEVBvEfCV2MzofMzt7A" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_86QsIFBvEfCV2MzofMzt7A" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_86QsJFBvEfCV2MzofMzt7A" name="робот" type="_1W0I0FBvEfCV2MzofMzt7A" association="_86QFEFBvEfCV2MzofMzt7A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_9xnK4FBvEfCV2MzofMzt7A" memberEnd="_9xoZAFBvEfCV2MzofMzt7A _9xoZA1BvEfCV2MzofMzt7A">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9xnx8FBvEfCV2MzofMzt7A" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9xnx8VBvEfCV2MzofMzt7A" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_9xoZA1BvEfCV2MzofMzt7A" name="робот" type="_1W0I0FBvEfCV2MzofMzt7A" association="_9xnK4FBvEfCV2MzofMzt7A"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_OUnqMFBwEfCV2MzofMzt7A" name="Вертикальные стойки"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_P7pSYFBwEfCV2MzofMzt7A" name="Рельсовые направляющие"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_VTgu8FBwEfCV2MzofMzt7A" memberEnd="_VThWAlBwEfCV2MzofMzt7A _VTh9EVBwEfCV2MzofMzt7A">
@@ -191,6 +151,248 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_cshBEVIWEfCDT8zyTmbBIA" type="_OWzfwFIWEfCDT8zyTmbBIA" association="_csdWsFIWEfCDT8zyTmbBIA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_E0d2sFLuEfCpe9MCSj6PSw" name="Автоматизированный склад"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dp0msFLuEfCpe9MCSj6PSw" name="Block45"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZE-QkFLwEfCH_e2Pe4JEDg" name="Автоматизированный склад">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_MmZlIFLyEfCH_e2Pe4JEDg" name="робот" type="_hlQPkFLwEfCH_e2Pe4JEDg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MmaMMFLyEfCH_e2Pe4JEDg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MmazQFLyEfCH_e2Pe4JEDg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zfPokFLzEfCH_e2Pe4JEDg" name="робот" type="_hlQPkFLwEfCH_e2Pe4JEDg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfQPoFLzEfCH_e2Pe4JEDg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfRdwFLzEfCH_e2Pe4JEDg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CGmTglL0EfCH_e2Pe4JEDg" name="зона отгрузки" type="_wjNnMFLxEfCH_e2Pe4JEDg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CGm6kFL0EfCH_e2Pe4JEDg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CGm6kVL0EfCH_e2Pe4JEDg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DljCUlM3EfCdPJ2Qr4rT2A" name="робот" type="_hlQPkFLwEfCH_e2Pe4JEDg" aggregation="composite" association="_DlibQFM3EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DljCU1M3EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DljCVFM3EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EVwXQlM3EfCdPJ2Qr4rT2A" name="зона отгрузки" type="_wjNnMFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_EVvwMFM3EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EVwXQ1M3EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EVw-UFM3EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JIH6ElM3EfCdPJ2Qr4rT2A" name="зона выдачи" type="_srNa4FLxEfCH_e2Pe4JEDg" aggregation="composite" association="_JIGr8FM3EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JIIhIFM3EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JIIhIVM3EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_LqKZAFM3EfCdPJ2Qr4rT2A" name="amr" type="_n2ZBAFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_LqJx8FM3EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LqKZAVM3EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LqKZAlM3EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PkHtIlM3EfCdPJ2Qr4rT2A" name="персонал" type="_quXTsFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_PkHGEFM3EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PkHtI1M3EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PkHtJFM3EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TM1gQlM3EfCdPJ2Qr4rT2A" name="роботы-штабелеры" type="_pSgZsFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_TM05MFM3EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TM1gQ1M3EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TM1gRFM3EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_20MS4lM6EfCdPJ2Qr4rT2A" name="генерация входящих заказов с заданными параметрами" type="_z_ZaMFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_20Lr0FM6EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_20M58FM6EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_20M58VM6EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cIqO8lM7EfCdPJ2Qr4rT2A" name="зона комплектации" type="_yKK98FLxEfCH_e2Pe4JEDg" aggregation="composite" association="_cIpn4FM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cIq2AFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cIq2AVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dy6KQlM7EfCdPJ2Qr4rT2A" name="зона хранения" type="_uGlzwFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_dy5jMFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dy6xUFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dy6xUVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hlQPkFLwEfCH_e2Pe4JEDg" name="Робот">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oVexIlM7EfCdPJ2Qr4rT2A" name="контейнер" type="_hlqqMFM7EfCdPJ2Qr4rT2A" aggregation="composite" association="_oVeKEFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oVfYMFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oVfYMVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7KbocFM8EfCdPJ2Qr4rT2A" name="Operation2"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7YocgFM8EfCdPJ2Qr4rT2A" name="Operation3"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7rKW8FM8EfCdPJ2Qr4rT2A" name="Operation4"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_72vU0FM8EfCdPJ2Qr4rT2A" name="Operation5"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_78G9AFM8EfCdPJ2Qr4rT2A" name="Operation6"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7-LZkFM8EfCdPJ2Qr4rT2A" name="Operation7"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7_kgsFM8EfCdPJ2Qr4rT2A" name="Operation8"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8BLDMFM8EfCdPJ2Qr4rT2A" name="Operation9"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8zgfEFM8EfCdPJ2Qr4rT2A" name="Operation10"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_86reEFM8EfCdPJ2Qr4rT2A" name="Operation11"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_88rCIFM8EfCdPJ2Qr4rT2A" name="Operation12"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8-K28FM8EfCdPJ2Qr4rT2A" name="Operation13"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8_wyYFM8EfCdPJ2Qr4rT2A" name="Operation14"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9ciN8FM8EfCdPJ2Qr4rT2A" name="Operation15"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_9jJMQFM8EfCdPJ2Qr4rT2A" name="Operation16"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-uCSEFM8EfCdPJ2Qr4rT2A" name="Operation17"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_n2ZBAFLxEfCH_e2Pe4JEDg" name="AMR">
+      <ownedReception xmi:type="uml:Reception" xmi:id="_8icucFLzEfCH_e2Pe4JEDg" name="Reception1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pSgZsFLxEfCH_e2Pe4JEDg" name="Роботы-штабелеры"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_quXTsFLxEfCH_e2Pe4JEDg" name="Персонал"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_srNa4FLxEfCH_e2Pe4JEDg" name="Зона выдачи">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_K0OSslM7EfCdPJ2Qr4rT2A" name="стол" type="_4CSn4FLxEfCH_e2Pe4JEDg" aggregation="composite" association="_K0NroFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K0O5wFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K0O5wVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_uGlzwFLxEfCH_e2Pe4JEDg" name="Зона хранения">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_V9j-olM7EfCdPJ2Qr4rT2A" name="стеллаж" type="_9PaNAFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_V9iwgFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V9klsFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V9klsVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wjNnMFLxEfCH_e2Pe4JEDg" name="Зона отгрузки"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yKK98FLxEfCH_e2Pe4JEDg" name="Зона комплектации"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_z_ZaMFLxEfCH_e2Pe4JEDg" name="Генерация входящих заказов с заданными параметрами"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4CSn4FLxEfCH_e2Pe4JEDg" name="Стол">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HWV2kVM7EfCdPJ2Qr4rT2A" name="камера" type="_6kjwUFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_HWVPgFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HWV2klM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HWV2k1M7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JI_f8FM7EfCdPJ2Qr4rT2A" name="шкаф управления" type="_5ZymUFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_JI-R0FM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JI_f8VM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JI_f8lM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vn2LglM7EfCdPJ2Qr4rT2A" name="контейнер" type="_hlqqMFM7EfCdPJ2Qr4rT2A" aggregation="composite" association="_vn1kcFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vn2ykFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vn2ykVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5ZymUFLxEfCH_e2Pe4JEDg" name="Шкаф управления">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_D7VnkFL0EfCH_e2Pe4JEDg" name="панель управления" type="_719t0FLxEfCH_e2Pe4JEDg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D7VnkVL0EfCH_e2Pe4JEDg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D7VnklL0EfCH_e2Pe4JEDg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NhH90lM7EfCdPJ2Qr4rT2A" name="панель управления" type="_719t0FLxEfCH_e2Pe4JEDg" aggregation="composite" association="_NhHWwFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NhIk4FM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NhIk4VM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6kjwUFLxEfCH_e2Pe4JEDg" name="Камера"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_719t0FLxEfCH_e2Pe4JEDg" name="Панель управления"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9PaNAFLxEfCH_e2Pe4JEDg" name="Стеллаж">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ZiJfslM7EfCdPJ2Qr4rT2A" name="ячейка" type="_-WLAwFLxEfCH_e2Pe4JEDg" aggregation="composite" association="_ZiIRkFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZiKGwFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZiKGwVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-WLAwFLxEfCH_e2Pe4JEDg" name="Ячейка">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_xYjUIlM7EfCdPJ2Qr4rT2A" name="контейнер" type="_hlqqMFM7EfCdPJ2Qr4rT2A" aggregation="composite" association="_xYitEFM7EfCdPJ2Qr4rT2A">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xYj7MFM7EfCdPJ2Qr4rT2A"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xYj7MVM7EfCdPJ2Qr4rT2A" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DlibQFM3EfCdPJ2Qr4rT2A" memberEnd="_DljCUlM3EfCdPJ2Qr4rT2A _DljCVVM3EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DljCUFM3EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DljCUVM3EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DljCVVM3EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_DlibQFM3EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EVvwMFM3EfCdPJ2Qr4rT2A" memberEnd="_EVwXQlM3EfCdPJ2Qr4rT2A _EVw-UVM3EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EVwXQFM3EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EVwXQVM3EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_EVw-UVM3EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_EVvwMFM3EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JIGr8FM3EfCdPJ2Qr4rT2A" memberEnd="_JIH6ElM3EfCdPJ2Qr4rT2A _JIIhIlM3EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JIH6EFM3EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JIH6EVM3EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JIIhIlM3EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_JIGr8FM3EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_LqJx8FM3EfCdPJ2Qr4rT2A" memberEnd="_LqKZAFM3EfCdPJ2Qr4rT2A _LqKZA1M3EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LqJx8VM3EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LqJx8lM3EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_LqKZA1M3EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_LqJx8FM3EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PkHGEFM3EfCdPJ2Qr4rT2A" memberEnd="_PkHtIlM3EfCdPJ2Qr4rT2A _PkHtJVM3EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PkHtIFM3EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PkHtIVM3EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PkHtJVM3EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_PkHGEFM3EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TM05MFM3EfCdPJ2Qr4rT2A" memberEnd="_TM1gQlM3EfCdPJ2Qr4rT2A _TM1gRVM3EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TM1gQFM3EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TM1gQVM3EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TM1gRVM3EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_TM05MFM3EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_20Lr0FM6EfCdPJ2Qr4rT2A" memberEnd="_20MS4lM6EfCdPJ2Qr4rT2A _20M58lM6EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_20MS4FM6EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_20MS4VM6EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_20M58lM6EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_20Lr0FM6EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HWVPgFM7EfCdPJ2Qr4rT2A" memberEnd="_HWV2kVM7EfCdPJ2Qr4rT2A _HWV2lFM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HWVPgVM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HWV2kFM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HWV2lFM7EfCdPJ2Qr4rT2A" name="стол" type="_4CSn4FLxEfCH_e2Pe4JEDg" association="_HWVPgFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JI-R0FM7EfCdPJ2Qr4rT2A" memberEnd="_JI_f8FM7EfCdPJ2Qr4rT2A _JI_f81M7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JI-44FM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JI-44VM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JI_f81M7EfCdPJ2Qr4rT2A" name="стол" type="_4CSn4FLxEfCH_e2Pe4JEDg" association="_JI-R0FM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_K0NroFM7EfCdPJ2Qr4rT2A" memberEnd="_K0OSslM7EfCdPJ2Qr4rT2A _K0O5wlM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K0OSsFM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K0OSsVM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_K0O5wlM7EfCdPJ2Qr4rT2A" name="зона выдачи" type="_srNa4FLxEfCH_e2Pe4JEDg" association="_K0NroFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NhHWwFM7EfCdPJ2Qr4rT2A" memberEnd="_NhH90lM7EfCdPJ2Qr4rT2A _NhIk4lM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NhH90FM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NhH90VM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NhIk4lM7EfCdPJ2Qr4rT2A" name="шкаф управления" type="_5ZymUFLxEfCH_e2Pe4JEDg" association="_NhHWwFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_V9iwgFM7EfCdPJ2Qr4rT2A" memberEnd="_V9j-olM7EfCdPJ2Qr4rT2A _V9klslM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_V9j-oFM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_V9j-oVM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_V9klslM7EfCdPJ2Qr4rT2A" name="зона хранения" type="_uGlzwFLxEfCH_e2Pe4JEDg" association="_V9iwgFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZiIRkFM7EfCdPJ2Qr4rT2A" memberEnd="_ZiJfslM7EfCdPJ2Qr4rT2A _ZiKGwlM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZiJfsFM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZiJfsVM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZiKGwlM7EfCdPJ2Qr4rT2A" name="стеллаж" type="_9PaNAFLxEfCH_e2Pe4JEDg" association="_ZiIRkFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cIpn4FM7EfCdPJ2Qr4rT2A" memberEnd="_cIqO8lM7EfCdPJ2Qr4rT2A _cIq2AlM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cIqO8FM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cIqO8VM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_cIq2AlM7EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_cIpn4FM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dy5jMFM7EfCdPJ2Qr4rT2A" memberEnd="_dy6KQlM7EfCdPJ2Qr4rT2A _dy6xUlM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dy6KQFM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dy6KQVM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_dy6xUlM7EfCdPJ2Qr4rT2A" name="автоматизированный склад" type="_ZE-QkFLwEfCH_e2Pe4JEDg" association="_dy5jMFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hlqqMFM7EfCdPJ2Qr4rT2A" name="Контейнер"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oVeKEFM7EfCdPJ2Qr4rT2A" memberEnd="_oVexIlM7EfCdPJ2Qr4rT2A _oVfYMlM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oVexIFM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oVexIVM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_oVfYMlM7EfCdPJ2Qr4rT2A" name="робот" type="_hlQPkFLwEfCH_e2Pe4JEDg" association="_oVeKEFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vn1kcFM7EfCdPJ2Qr4rT2A" memberEnd="_vn2LglM7EfCdPJ2Qr4rT2A _vn2yklM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vn2LgFM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vn2LgVM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vn2yklM7EfCdPJ2Qr4rT2A" name="стол" type="_4CSn4FLxEfCH_e2Pe4JEDg" association="_vn1kcFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xYitEFM7EfCdPJ2Qr4rT2A" memberEnd="_xYjUIlM7EfCdPJ2Qr4rT2A _xYj7MlM7EfCdPJ2Qr4rT2A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xYjUIFM7EfCdPJ2Qr4rT2A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xYjUIVM7EfCdPJ2Qr4rT2A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xYj7MlM7EfCdPJ2Qr4rT2A" name="ячейка" type="_-WLAwFLxEfCH_e2Pe4JEDg" association="_xYitEFM7EfCdPJ2Qr4rT2A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SCz8IFNCEfCdPJ2Qr4rT2A" name="п"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lHjr8FBvEfCV2MzofMzt7A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lHmvQFBvEfCV2MzofMzt7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -251,6 +453,12 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hXFo0VLREfCpe9MCSj6PSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hXGP4FLREfCpe9MCSj6PSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_1YQ6UFBvEfCV2MzofMzt7A" base_Class="_1W0I0FBvEfCV2MzofMzt7A"/>
   <Blocks:Block xmi:id="_28uWsFBvEfCV2MzofMzt7A" base_Class="_28peMFBvEfCV2MzofMzt7A"/>
@@ -266,4 +474,25 @@
   <Blocks:Block xmi:id="_OW8CoFIWEfCDT8zyTmbBIA" base_Class="_OWzfwFIWEfCDT8zyTmbBIA"/>
   <Blocks:Block xmi:id="_OntCgFIWEfCDT8zyTmbBIA" base_Class="_OnoxEFIWEfCDT8zyTmbBIA"/>
   <Blocks:Block xmi:id="_O24uAFIWEfCDT8zyTmbBIA" base_Class="_O22RwFIWEfCDT8zyTmbBIA"/>
+  <Blocks:Block xmi:id="_E-BbUFLuEfCpe9MCSj6PSw" base_Class="_E0d2sFLuEfCpe9MCSj6PSw"/>
+  <Blocks:Block xmi:id="_dp--wFLuEfCpe9MCSj6PSw" base_Class="_dp0msFLuEfCpe9MCSj6PSw"/>
+  <Blocks:Block xmi:id="_ZFWEAFLwEfCH_e2Pe4JEDg" base_Class="_ZE-QkFLwEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_hlVIEFLwEfCH_e2Pe4JEDg" base_Class="_hlQPkFLwEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_n2dScFLxEfCH_e2Pe4JEDg" base_Class="_n2ZBAFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_pSoVgFLxEfCH_e2Pe4JEDg" base_Class="_pSgZsFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_qua-EFLxEfCH_e2Pe4JEDg" base_Class="_quXTsFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_srQeMFLxEfCH_e2Pe4JEDg" base_Class="_srNa4FLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_uGoQAFLxEfCH_e2Pe4JEDg" base_Class="_uGlzwFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_wjTt0FLxEfCH_e2Pe4JEDg" base_Class="_wjNnMFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_yKNaMFLxEfCH_e2Pe4JEDg" base_Class="_yKK98FLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_z_dEkFLxEfCH_e2Pe4JEDg" base_Class="_z_ZaMFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_4CVEIFLxEfCH_e2Pe4JEDg" base_Class="_4CSn4FLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_5Z57EFLxEfCH_e2Pe4JEDg" base_Class="_5ZymUFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_6knasFLxEfCH_e2Pe4JEDg" base_Class="_6kjwUFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_72BYMFLxEfCH_e2Pe4JEDg" base_Class="_719t0FLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_9PcpQFLxEfCH_e2Pe4JEDg" base_Class="_9PaNAFLxEfCH_e2Pe4JEDg"/>
+  <Blocks:Block xmi:id="_-WNdAFLxEfCH_e2Pe4JEDg" base_Class="_-WLAwFLxEfCH_e2Pe4JEDg"/>
+  <ModelElements:Expose xmi:id="_6KlygFMwEfCdPJ2Qr4rT2A"/>
+  <Blocks:Block xmi:id="_hltGcFM7EfCdPJ2Qr4rT2A" base_Class="_hlqqMFM7EfCdPJ2Qr4rT2A"/>
+  <Blocks:Block xmi:id="_SC2_cFNCEfCdPJ2Qr4rT2A" base_Class="_SCz8IFNCEfCdPJ2Qr4rT2A"/>
 </xmi:XMI>
